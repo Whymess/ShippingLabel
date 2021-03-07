@@ -23,6 +23,7 @@ export default function Application() {
   let [weight, setWeight] = useState(0);
 
   let [shippingOption, setShippingOption] = useState({});
+
   let [paths] = useState([
     "/sender",
     "/receiver",
