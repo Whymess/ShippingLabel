@@ -1,0 +1,15 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+
+  .card {
+    width: 1000px;
+    height: 500px;
+
+    .card-title {
+      text-align: center;
+    }
+  }
+}
