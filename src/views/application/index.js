@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
-import { Form, FormActions, Weight, Options, Complete } from "../../components";
-import { default as data } from "../../data/";
+import { Form, Weight, Options, Complete, FormActions } from "../../views";
+import data from "../../data";
 import { Switch, Route, useHistory, useLocation } from "react-router-dom";
 
 export default function Application() {
@@ -96,13 +96,13 @@ export default function Application() {
             <div className="card-body">
               <Switch>
                 <Route path="/sender">
-                  <div className="card-action-title">
+                  <div className="card-action-title d-flex justify-content-center">
                     <h5> {data.cardActionSender} </h5>
                   </div>
                   <Form formState={sender} onChange={onChange} />
                 </Route>
                 <Route path="/receiver">
-                  <div className="card-action-title">
+                  <div className="card-action-title d-flex justify-content-center">
                     <h5> {data.cardActionReceiver} </h5>
                   </div>
                   <Form formState={receiver} onChange={onChange} />

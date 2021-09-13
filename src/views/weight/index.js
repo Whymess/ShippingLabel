@@ -1,5 +1,5 @@
 import React from "react";
-import { Input } from "../common";
+import { Input } from "../../components/common";
 export default function Weight(props) {
   let { value, onChange } = props;
   return (

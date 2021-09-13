@@ -1,10 +1,10 @@
 import React from "react";
-import { Input } from "../common";
+import { Input } from "../../components/common";
 import "./index.scss";
 export default function AddressSlot(props) {
   let { label, onChange, value } = props;
   return (
-    <>
+    <div>
       <div className="col-2 card-body-form-label">
         <label>{label}:</label>
       </div>
@@ -17,6 +17,6 @@ export default function AddressSlot(props) {
           label={label}
         />
       </div>
-    </>
+    </div>
   );
 }

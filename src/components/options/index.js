@@ -1,11 +1,12 @@
 import React from "react";
 import { Input } from "../common";
 import "./index.scss";
-import { default as data } from "../../data/";
+import data from "../../data/";
+
 export default function Options(props) {
   let { onChange, shippingOption } = props;
   return (
-    <>
+    <div>
       {data.shippingOptions.map((el, i) => {
         return (
           <li key={i}>
@@ -21,6 +22,6 @@ export default function Options(props) {
           </li>
         );
       })}
-    </>
+    </div>
   );
 }

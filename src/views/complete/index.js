@@ -11,7 +11,7 @@ export default function Complete(props) {
   const format = (object) => {
     let { Name, Street, City, State, Zip } = object;
     return (
-      <>
+      <div>
         <div>
           <b>Name: </b>
           {Name || "N/A"}
@@ -32,7 +32,7 @@ export default function Complete(props) {
           <b>Zip: </b>
           {Zip || "N/A"}
         </div>
-      </>
+      </div>
     );
   };
 
