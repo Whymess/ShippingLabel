@@ -9,7 +9,7 @@ export default function Options(props) {
     <div>
       {data.shippingOptions.map((el, i) => {
         return (
-          <li key={i}>
+          <li key={i + 1}>
             <Input
               onChange={onChange}
               type="radio"

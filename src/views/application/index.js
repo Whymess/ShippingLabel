@@ -90,10 +90,11 @@ export default function Application() {
       <div className="form-wrapper">
         <div className="card">
           <div className="card-title mt-1">
-            <h1> {data.cardTitle}</h1>
+            <h1 style={{ textAlign: "center" }}> {data.cardTitle}</h1>
           </div>
           <div className="card-action-wrapper p-4">
             <div className="card-body">
+              {/* #Create seperate components in each path */}
               <Switch>
                 <Route path="/sender">
                   <div className="card-action-title d-flex justify-content-center">

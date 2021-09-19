@@ -1,6 +1,7 @@
 import React from "react";
 export default function Button(props) {
   let { name, onClick, disablePrevButton, disableContueButton } = props;
+
   let disable;
   if (name === "Continue") {
     disable = disableContueButton();
